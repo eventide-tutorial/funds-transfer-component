@@ -24,7 +24,6 @@ module FundsTransferComponent
       category :funds_transfer
 
       handle Initiated do |initiated|
-        funds_transfer_id = initiated.funds_transfer_id
         account_id = initiated.withdrawal_account_id
         withdrawal_id = initiated.withdrawal_id
         amount = initiated.amount
